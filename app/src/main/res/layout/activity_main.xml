@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertidor de grados"
+        android:layout_marginBottom="30dp"
+        android:textSize="30sp" />
+
+    <TableRow android:padding="10dp">
+        <TextView
+            android:id="@+id/tvC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="formato (xx.xx)"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="101dp" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+        <TextView
+            android:id="@+id/tvF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°F"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="formato (xx.xx)"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="169dp" />
+    </TableRow>
+
+    <TableRow android:padding="10dp" android:layout_marginBottom="30dp">
+        <TextView
+            android:id="@+id/tvK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°K"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/etK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="formato (xx.xx)"
+            android:inputType="numberDecimal"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="241dp" />
+    </TableRow>
+
+    <TableRow android:padding="10dp">
+        <Button
+            android:id="@+id/btnGC"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="°C"
+            android:backgroundTint="@color/black" />
+        <Button
+            android:id="@+id/btnGF"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="°F"
+            android:backgroundTint="@color/black" />
+        <Button
+            android:id="@+id/btnGK"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="°K"
+            android:backgroundTint="@color/black" />
+    </TableRow>
+</TableLayout>
